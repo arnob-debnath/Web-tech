@@ -14,7 +14,7 @@ $hasPhoneError = true;
 
 
 
-if($username){
+if(!$username){
     $_SESSION["usernameErr"] = "Username is required.";
     $hasUsernameError = true;
 } else {
@@ -22,7 +22,7 @@ if($username){
    $hasUsernameError = false; 
 }
 
-if($name){
+if(!$name){
     $_SESSION["nameErr"] = "Name is required.";
     $hasNameError = true;
 } else {
@@ -30,7 +30,7 @@ if($name){
     $hasNameError = false;
 }
 
-if($email){
+if(!$email){
     $_SESSION["emailErr"] = "Email is required.";
     $hasEmailError = true;
 } else {
@@ -38,7 +38,7 @@ if($email){
     $hasEmailError = false;
 }
 
-if($phone){
+if(!$phone){
     $_SESSION["phoneErr"] = "Phone number is required.";
     $hasPhoneError = true;
 } else {
@@ -57,7 +57,7 @@ if($hasUsernameError || $hasNameError || $hasEmailError || $hasPhoneError) {
 } else {
     echo "<h1>Hello Mr, $name </h1>";
     echo "<h2>Your Information</h2>";
-    echo "<h3>Your username is $username </h3>";
+    echo "<p>Your username is <strong>$username </strong></p>";
     echo "<h3>Your email is $email </h3>";
     echo "<h3>Your phone number is $phone </h3>";
 }

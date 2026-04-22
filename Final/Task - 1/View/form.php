@@ -43,25 +43,25 @@ unset($_SESSION["loginErr"]);
     <table>
         <tr>
             <td style="font-size: 20px;"> Username: </td>
-            <td> <input type="text" name="username" placeholder="Enter username"> </td>
+            <td> <input type="text" name="username" placeholder="Enter username" value="<?php echo $username; ?>"> </td>
             <td> <span style="color: red;" ><?php echo $usernameError; ?></span> </td>
         </tr>
 
         <tr>
             <td style="font-size: 20px;">Name:</td>
-            <td> <input type="text" name="name" placeholder="Enter your name"></td>
+            <td> <input type="text" name="name" placeholder="Enter your name" value="<?php echo $name; ?>"></td>
             <td> <span style="color: red;"><?php echo $nameError; ?></span> </td>
         </tr>
 
         <tr>
             <td style="font-size: 20px;">Email:</td>
-            <td> <input type="text" name="email" placeholder="Enter your email"></td>
+            <td> <input type="text" name="email" placeholder="Enter your email" value="<?php echo $email; ?>"></td>
             <td> <span style="color: red;"><?php echo $emailError; ?></span> </td>
         </tr>
 
         <tr>
             <td style="font-size: 20px;">Phone Number:</td>
-            <td> <input type="text" name="phone" placeholder="Enter your phone number"></td>
+            <td> <input type="text" name="phone" placeholder="Enter your phone number" value="<?php echo $phone; ?>"></td>
             <td> <span style="color: red;"><?php echo $phoneError; ?></span> </td>
         </tr>
 
